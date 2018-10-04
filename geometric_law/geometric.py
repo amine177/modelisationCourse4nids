@@ -15,10 +15,7 @@ def test(p):
     """
 
     r = random.random()
-    if r <= p:
-        return 'S'
-    else:
-        return 'E'
+    return r <= p
 
 
 if __name__ == "__main__":
