@@ -10,8 +10,8 @@ import sys
 
 def test(p):
     """
-        Returns 'S' if the random value is <= p
-            else 'E'
+        Returns True if the random value is <= p
+            else False
     """
 
     r = random.random()
