@@ -1,5 +1,5 @@
-# -*- coding: utf-8 -*-
 # !/bin/env python
+# -*- coding: utf-8 -*-
 """
     A program to illustrate the geometric law of probability
 """
