@@ -44,7 +44,7 @@ def plotHistogram(p, ti="X historgram", cl='b', la="Probability", n=3):
         n : number of tries
     """
 
-    combinations = [''.join(i) for i in itertools.product('HF', repeat=n)]
+    combinations = itertools.product('HF', repeat=n)
     y = []
     x = []
     hp = p
@@ -77,4 +77,4 @@ if __name__ == "__main__":
     pd = ntoss(1000000)
     print("Porbabilites H: {:f}, T: {:f}"
           .format(pd['H'], pd['T']))
-    plotHistogram(pd['H'], n=25,)
+    plotHistogram(pd['H'], n=29,)
