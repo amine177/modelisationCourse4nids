@@ -74,7 +74,7 @@ def plotHistogram(p, ti="X historgram", cl='b', la="Probability", n=3):
 
 if __name__ == "__main__":
     print("A single toss: {:s}".format(toss()))
-    pd = ntoss(1000000)
+    pd = ntoss(1000000, p=0.2)
     print("Porbabilites H: {:f}, T: {:f}"
           .format(pd['H'], pd['T']))
-    plotHistogram(pd['H'], n=29,)
+    plotHistogram(pd['H'], n=20)
